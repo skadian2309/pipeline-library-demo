@@ -1,6 +1,7 @@
 #!/usr/bin/env groovy
 
-def call(String name = 'human') {
-  echo "Hello SK Jai HO, ${name}."
+def call(Map config=[:]) {
+  if (config.deploy) {
+    echo "Hello SK Jai HO"
+            }
 }
-
