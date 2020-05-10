@@ -8,7 +8,13 @@ def call(Map pipelineParams) {
     agent {
          label 'maven'
     }
-
+         stages { 
+    stage('build') {
+                steps {
+                    sh 'echo ho'
+                }
+            }   
+         }
 }
 
 }
