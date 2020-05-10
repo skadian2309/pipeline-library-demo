@@ -2,4 +2,11 @@
 
 def call(Map config=[:]) {
     echo  config.deploy
+    
+    pipeline {
+    agent {
+        node { label 'maven'}
+    }
 }
+
+
