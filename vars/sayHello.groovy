@@ -8,5 +8,5 @@ def call(Map config=[:]) {
         node { label 'maven'}
     }
 }
-
+}
 
