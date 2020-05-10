@@ -5,7 +5,7 @@ def call(Map config=[:]) {
     
     pipeline {
     agent {
-        node { label 'maven'}
+         label 'maven'
     }
 }
 }
